@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "CPU_pycharm_草稿2.py", line 551, in <module>
+    data_MD = pd.read_csv(r"/home/lijianing/wxx/data/pre-train/MD.csv")
+  File "/home/lijianing/miniconda3/envs/wxx-torch/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/lijianing/miniconda3/envs/wxx-torch/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lijianing/miniconda3/envs/wxx-torch/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 581, in _read
+    return parser.read(nrows)
+  File "/home/lijianing/miniconda3/envs/wxx-torch/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1250, in read
+    index, columns, col_dict = self._engine.read(nrows)
+  File "/home/lijianing/miniconda3/envs/wxx-torch/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 225, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 805, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 861, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 847, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 1960, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Calling read(nbytes) on source failed. Try engine='python'.
